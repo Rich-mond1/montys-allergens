@@ -89,207 +89,37 @@ body{background:#ffffff;font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a1
 </style>
 </head>
 <body>
-<script>const __DATA__={
-"pages":[
-  {
-    "id":1,"title":"Signature Bowls",
-    "items":[
-      {"id":101,"name":"Chicken Caesar Salad","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":102,"name":"Beef Steak Salad","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":103,"name":"Chicken Salad","data":{"fish":{"on":true},"nuts":{"on":true,"note":"Almond (crunchy)"},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":104,"name":"Miso Salmon Salad","data":{"fish":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":105,"name":"Tofu Salad","data":{"nuts":{"on":true,"note":"Cashew nuts"},"sesame":{"on":true},"soya":{"on":true}}},
-      {"id":106,"name":"Chicken Pesto Salad","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"nuts":{"on":true,"note":"Cashew nuts (pesto)"}}},
-      {"id":107,"name":"Cured Salmon","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":108,"name":"Grilled Seabream","data":{"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}
-    ]
-  },
-  {
-    "id":2,"title":"Proteins",
-    "items":[
-      {"id":201,"name":"Braised Beef Bavette","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true}}},
-      {"id":202,"name":"Braised Chicken","data":{"fish":{"on":true},"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true}}},
-      {"id":203,"name":"Miso Salmon","data":{"fish":{"on":true},"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":204,"name":"Breaded Chicken","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true}}},
-      {"id":205,"name":"Marinated Tofu","data":{"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":206,"name":"Grilled Chicken (cold)","data":{}},
-      {"id":207,"name":"Seabream","data":{"fish":{"on":true}}}
-    ]
-  },
-  {
-    "id":3,"title":"Dressings",
-    "items":[
-      {"id":301,"name":"Caesar Dressing","data":{"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sulphur":{"on":true}}},
-      {"id":302,"name":"Chimichurri","data":{"sulphur":{"on":true}}},
-      {"id":303,"name":"Mediterranean Pesto","data":{"eggs":{"on":true},"milk":{"on":true},"nuts":{"on":true,"note":"Cashew nut"}}},
-      {"id":304,"name":"Miso Dressing","data":{"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":305,"name":"Monty's Mayo","data":{"eggs":{"on":true},"mustard":{"on":true},"soya":{"on":true}}},
-      {"id":306,"name":"Sando Dressing (broccoli)","data":{"eggs":{"on":true},"sesame":{"on":true},"soya":{"on":true}}},
-      {"id":307,"name":"Salsa Verde","data":{"sulphur":{"on":true}}},
-      {"id":308,"name":"Tahini","data":{"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":309,"name":"EVOO","data":{}}
-    ]
-  },
-  {
-    "id":4,"title":"Bases",
-    "items":[
-      {"id":401,"name":"Cooked Quinoa","data":{}},
-      {"id":402,"name":"Bulgur","data":{"gluten":{"on":true,"note":"Wheat"},"mustard":{"on":false,"trace":true,"note":"May contain"},"soya":{"on":false,"trace":true,"note":"May contain"}}},
-      {"id":403,"name":"Mix Rice (Brown, Red, Wild)","data":{}},
-      {"id":404,"name":"Mac and Cheese","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true}}},
-      {"id":405,"name":"Kale, Mixed Leaves, Spinach, Romaine","data":{}},
-      {"id":406,"name":"Fusilli","data":{"gluten":{"on":true,"note":"Wheat"}}},
-      {"id":407,"name":"Broccoli","data":{}}
-    ]
-  },
-  {
-    "id":5,"title":"Toppings",
-    "items":[
-      {"id":501,"name":"Spring Onions","data":{}},
-      {"id":502,"name":"Grilled Sweetcorn","data":{}},
-      {"id":503,"name":"Pomegranate Mix","data":{}},
-      {"id":504,"name":"Boiled Eggs","data":{"eggs":{"on":true}}},
-      {"id":505,"name":"Jalapeños","data":{}},
-      {"id":506,"name":"Red Radish","data":{}},
-      {"id":507,"name":"Cherry Tomatoes","data":{}},
-      {"id":508,"name":"Pickled Cucumber","data":{"sulphur":{"on":true}}},
-      {"id":509,"name":"Green Beans","data":{"soya":{"on":true}}},
-      {"id":510,"name":"Carrots","data":{}},
-      {"id":511,"name":"Parmesan Cheese","data":{"eggs":{"on":true},"milk":{"on":true}}},
-      {"id":512,"name":"Feta Cheese","data":{"milk":{"on":true}}},
-      {"id":513,"name":"Goat Cheese","data":{"milk":{"on":true}}},
-      {"id":514,"name":"Olives","data":{}},
-      {"id":515,"name":"Pickled Red Cabbage","data":{"sulphur":{"on":true}}},
-      {"id":516,"name":"Pickled Red Onions","data":{"sulphur":{"on":true}}}
-    ]
-  },
-  {
-    "id":6,"title":"Hot Toppings",
-    "items":[
-      {"id":601,"name":"Roasted Potatoes","data":{"gluten":{"on":false,"trace":true,"note":"M.C. Wheat (Cumin)"},"milk":{"on":true}}},
-      {"id":602,"name":"Sweet Potatoes","data":{}},
-      {"id":603,"name":"Seasonal Veggies","data":{"gluten":{"on":false,"trace":true,"note":"M.C. Wheat (Cumin)"},"milk":{"on":true},"soya":{"on":true}}},
-      {"id":604,"name":"Broccoli","data":{}}
-    ]
-  },
-  {
-    "id":7,"title":"Crunchies",
-    "items":[
-      {"id":701,"name":"Almond Flakes","data":{"nuts":{"on":true,"note":"Almond"}}},
-      {"id":702,"name":"Roasted Cashew Nuts","data":{"nuts":{"on":true,"note":"Cashews"}}},
-      {"id":703,"name":"Mix Seeds","data":{"sesame":{"on":true},"soya":{"on":true}}},
-      {"id":704,"name":"Crispy Onions","data":{"gluten":{"on":true,"note":"Wheat"}}},
-      {"id":705,"name":"Croutons","data":{"gluten":{"on":true,"note":"Wheat"}}}
-    ]
-  },
-  {
-    "id":8,"title":"Sandwiches",
-    "items":[
-      {"id":801,"name":"Beef Ciabatta","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"mustard":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":802,"name":"Chicken Ciabatta","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}
-    ]
-  },
-  {
-    "id":9,"title":"Protein Boxes",
-    "items":[
-      {"id":901,"name":"Bavette Steak Box","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":902,"name":"Monty's Chicken Box","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":903,"name":"Miso Glazed Salmon Box","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":904,"name":"Grilled Seabream Box","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":905,"name":"Korean Tofu Box","data":{"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}
-    ]
-  },
-  {
-    "id":10,"title":"Roast Boxes",
-    "items":[
-      {"id":1001,"name":"Bavette Steak Roast Box","data":{"celery":{"on":true},"gluten":{"on":true,"note":"Wheat"},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},
-      {"id":1002,"name":"Monty's Chicken Roast Box","data":{"celery":{"on":true},"gluten":{"on":true,"note":"Wheat"},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}
-    ]
-  }
-],
-"allergens":[
-  {"id":"celery","name":"Celery","emoji":"🌿","color":"#4ade80"},
-  {"id":"gluten","name":"Cereals/Gluten","emoji":"🌾","color":"#fbbf24"},
-  {"id":"crustaceans","name":"Crustaceans","emoji":"🦞","color":"#f87171"},
-  {"id":"eggs","name":"Eggs","emoji":"🥚","color":"#fde68a"},
-  {"id":"fish","name":"Fish","emoji":"🐟","color":"#60a5fa"},
-  {"id":"lupin","name":"Lupin","emoji":"🌸","color":"#c084fc"},
-  {"id":"milk","name":"Milk","emoji":"🥛","color":"#e0e7ff"},
-  {"id":"molluscs","name":"Molluscs","emoji":"🐚","color":"#a78bfa"},
-  {"id":"mustard","name":"Mustard","emoji":"🌻","color":"#fcd34d"},
-  {"id":"nuts","name":"Tree Nuts*","emoji":"🌰","color":"#d97706"},
-  {"id":"peanuts","name":"Peanuts","emoji":"🥜","color":"#b45309"},
-  {"id":"sesame","name":"Sesame Seeds","emoji":"🫘","color":"#fb923c"},
-  {"id":"soya","name":"Soya","emoji":"🫛","color":"#86efac"},
-  {"id":"sulphur","name":"Sulphur Dioxide","emoji":"💨","color":"#94a3b8"}
-],
-"reviewDate":"12/05/2026",
-"reviewer":"Operations Manager",
-"generated":"12/05/2026"
-};</script>
+<script>const __DATA__={"pages":[{"id":201,"title":"Signature Bowls","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":202,"name":"Chicken Caesar Salad","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"soya":{"on":true},"sulphur":{"on":true},"nuts":{"on":true,"trace":false}}},{"id":203,"name":"Beef Steak Salad","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true},"sulphur":{"on":true}}},{"id":204,"name":"Chicken Salad","data":{"fish":{"on":true},"nuts":{"on":true,"note":"Almond (crunchy)"},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":205,"name":"Miso Salmon Salad","data":{"fish":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":206,"name":"Tofu Salad","data":{"nuts":{"on":true,"note":"Cashew nuts"},"sesame":{"on":true},"soya":{"on":true}}},{"id":207,"name":"Chicken Pesto Salad","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"nuts":{"on":true,"note":"Cashew nuts (pesto)"}}},{"id":208,"name":"Cured Salmon","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":209,"name":"Grilled Seabream","data":{"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}]},{"id":210,"title":"Proteins","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":211,"name":"Braised Beef Bavette","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true}}},{"id":212,"name":"Braised Chicken","data":{"fish":{"on":true},"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true}}},{"id":213,"name":"Miso Salmon","data":{"fish":{"on":true},"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true},"sulphur":{"on":true}}},{"id":214,"name":"Breaded Chicken","data":{"gluten":{"on":true,"note":"Wheat"},"soya":{"on":true}}},{"id":215,"name":"Marinated Tofu","data":{"soya":{"on":true},"sulphur":{"on":true}}},{"id":216,"name":"Grilled Chicken (cold)","data":{}},{"id":217,"name":"Seabream","data":{"fish":{"on":true}}}]},{"id":218,"title":"Dressings","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":219,"name":"Caesar Dressing","data":{"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sulphur":{"on":true}}},{"id":220,"name":"Chimichurri","data":{"sulphur":{"on":true}}},{"id":221,"name":"Mediterranean Pesto","data":{"eggs":{"on":true},"milk":{"on":true},"nuts":{"on":true,"note":"Cashew nut"}}},{"id":222,"name":"Miso Dressing","data":{"sesame":{"on":true,"note":"Sesame oil"},"soya":{"on":true},"sulphur":{"on":true}}},{"id":223,"name":"Monty's Mayo","data":{"eggs":{"on":true},"mustard":{"on":true},"soya":{"on":true}}},{"id":224,"name":"Sando Dressing (broccoli)","data":{"eggs":{"on":true},"sesame":{"on":true},"soya":{"on":true}}},{"id":225,"name":"Salsa Verde","data":{"sulphur":{"on":true}}},{"id":226,"name":"Tahini","data":{"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":227,"name":"EVOO","data":{}}]},{"id":228,"title":"Bases","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":229,"name":"Cooked Quinoa","data":{}},{"id":230,"name":"Bulgur","data":{"gluten":{"on":true,"note":"Wheat"},"mustard":{"on":false,"trace":true,"note":"May contain"},"soya":{"on":false,"trace":true,"note":"May contain"}}},{"id":231,"name":"Mix Rice (Brown, Red, Wild)","data":{}},{"id":232,"name":"Mac and Cheese","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true}}},{"id":233,"name":"Kale, Mixed Leaves, Spinach, Romaine","data":{}},{"id":234,"name":"Fusilli","data":{"gluten":{"on":true,"note":"Wheat"}}},{"id":235,"name":"Broccoli","data":{}}]},{"id":236,"title":"Toppings","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":237,"name":"Spring Onions","data":{}},{"id":238,"name":"Grilled Sweetcorn","data":{}},{"id":239,"name":"Pomegranate Mix","data":{}},{"id":240,"name":"Boiled Eggs","data":{"eggs":{"on":true}}},{"id":241,"name":"Jalapeños","data":{}},{"id":242,"name":"Red Radish","data":{}},{"id":243,"name":"Cherry Tomatoes","data":{}},{"id":244,"name":"Pickled Cucumber","data":{"sulphur":{"on":true}}},{"id":245,"name":"Green Beans","data":{"soya":{"on":true}}},{"id":246,"name":"Carrots","data":{}},{"id":247,"name":"Parmesan Cheese","data":{"eggs":{"on":true},"milk":{"on":true}}},{"id":248,"name":"Feta Cheese","data":{"milk":{"on":true}}},{"id":249,"name":"Goat Cheese","data":{"milk":{"on":true}}},{"id":250,"name":"Olives","data":{}},{"id":251,"name":"Pickled Red Cabbage","data":{"sulphur":{"on":true}}},{"id":252,"name":"Pickled Red Onions","data":{"sulphur":{"on":true}}}]},{"id":253,"title":"Hot Toppings","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":254,"name":"Roasted Potatoes","data":{"gluten":{"on":false,"trace":true,"note":"M.C. Wheat (Cumin)"},"milk":{"on":true}}},{"id":255,"name":"Sweet Potatoes","data":{}},{"id":256,"name":"Seasonal Veggies","data":{"gluten":{"on":false,"trace":true,"note":"M.C. Wheat (Cumin)"},"milk":{"on":true},"soya":{"on":true}}},{"id":257,"name":"Broccoli","data":{}}]},{"id":258,"title":"Crunchies","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":259,"name":"Almond Flakes","data":{"nuts":{"on":true,"note":"Almond"}}},{"id":260,"name":"Roasted Cashew Nuts","data":{"nuts":{"on":true,"note":"Cashews"}}},{"id":261,"name":"Mix Seeds","data":{"sesame":{"on":true},"soya":{"on":true}}},{"id":262,"name":"Crispy Onions","data":{"gluten":{"on":true,"note":"Wheat"}}},{"id":263,"name":"Croutons","data":{"gluten":{"on":true,"note":"Wheat"}}}]},{"id":264,"title":"Sandwiches","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":265,"name":"Beef Ciabatta","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"mustard":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":266,"name":"Chicken Ciabatta","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}]},{"id":267,"title":"Protein Boxes","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":268,"name":"Bavette Steak Box","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":269,"name":"Monty's Chicken Box","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"milk":{"on":true},"mustard":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":270,"name":"Miso Glazed Salmon Box","data":{"gluten":{"on":true,"note":"Wheat"},"eggs":{"on":true},"fish":{"on":true},"milk":{"on":true},"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":271,"name":"Grilled Seabream Box","data":{"gluten":{"on":true,"note":"Wheat"},"fish":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":272,"name":"Korean Tofu Box","data":{"sesame":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}]},{"id":273,"title":"Roast Boxes","allergens":["celery","gluten","crustaceans","eggs","fish","lupin","milk","molluscs","mustard","nuts","peanuts","sesame","soya","sulphur"],"items":[{"id":274,"name":"Bavette Steak Roast Box","data":{"celery":{"on":true},"gluten":{"on":true,"note":"Wheat"},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}},{"id":275,"name":"Monty's Chicken Roast Box","data":{"celery":{"on":true},"gluten":{"on":true,"note":"Wheat"},"milk":{"on":true},"soya":{"on":true},"sulphur":{"on":true}}}]}],"allergens":[{"id":"celery","name":"Celery","emoji":"🌿","color":"#4ade80"},{"id":"gluten","name":"Cereals/Gluten","emoji":"🌾","color":"#fbbf24"},{"id":"crustaceans","name":"Crustaceans","emoji":"🦞","color":"#f87171"},{"id":"eggs","name":"Eggs","emoji":"🥚","color":"#fde68a"},{"id":"fish","name":"Fish","emoji":"🐟","color":"#60a5fa"},{"id":"lupin","name":"Lupin","emoji":"🌸","color":"#c084fc"},{"id":"milk","name":"Milk","emoji":"🥛","color":"#e0e7ff"},{"id":"molluscs","name":"Molluscs","emoji":"🐚","color":"#a78bfa"},{"id":"mustard","name":"Mustard","emoji":"🌻","color":"#fcd34d"},{"id":"nuts","name":"Tree Nuts*","emoji":"🌰","color":"#d97706"},{"id":"peanuts","name":"Peanuts","emoji":"🥜","color":"#b45309"},{"id":"sesame","name":"Sesame Seeds","emoji":"🫘","color":"#fb923c"},{"id":"soya","name":"Soya","emoji":"🫛","color":"#86efac"},{"id":"sulphur","name":"Sulphur Dioxide","emoji":"💨","color":"#94a3b8"}],"reviewDate":"12/05/2026","reviewer":"Operations Manager","generated":"12/05/2026"};</script>
 <div id="app"></div>
 <script>
 (function(){
 const D=__DATA__;
 const PAGES=D.pages;
 const ALIST=D.allergens;
-const aMap={};ALIST.forEach(a=>{aMap[a.id]=a;});
-
 let state={view:"matrix",page:PAGES[0]?.id||null,search:""};
-
 function render(){
   const pg=PAGES.find(p=>p.id===state.page)||PAGES[0];
   if(!pg)return;
   const q=state.search.toLowerCase().trim();
-
   let viewHTML="";
   if(state.view==="matrix"){viewHTML=buildMatrix(pg,q);}
   else if(state.view==="allergen"){viewHTML=buildAllergenView(q);}
   else{viewHTML=buildDishView(q);}
-
   document.getElementById("app").innerHTML=`
-  <div class="top-bar">
-    <div class="top-inner">
-      <div class="logo-wrap">
-        <svg width="220" height="39" viewBox="0 0 275 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#mwv)"><path d="M26.9245 17.1084C24.2478 11.5512 21.6162 6.09737 18.9968 0.664269H0.40332V47.336H16.9473V26.2532H17.5499C19.2838 30.4201 21.0013 34.5415 22.7106 38.6546H31.081C32.8026 34.5208 34.5201 30.3994 36.2458 26.2491H36.8525V47.3525H53.3842V0.651855H34.7948C32.1918 6.10151 29.5807 11.5636 26.9327 17.1125L26.9245 17.1084Z" fill="white"/><path d="M119.851 47.3316V26.9854C120.245 26.9399 120.245 26.9399 120.425 27.333C123.426 33.8585 126.426 40.3799 129.431 46.9054C129.497 47.0502 129.566 47.195 129.628 47.3233H144.86V0.655735H128.316V21.0061C128.058 21.1013 127.914 21.0599 127.836 20.8447C127.799 20.7371 127.742 20.6378 127.697 20.5344C125.209 15.1344 122.725 9.73022 120.237 4.33022C119.671 3.10539 119.109 1.8847 118.54 0.647461H103.336C103.238 1.33436 103.266 46.9882 103.357 47.3275H119.855L119.851 47.3316Z" fill="white"/><path d="M95.5603 8.71246C93.8797 5.85315 91.5842 3.64349 88.6328 2.1497C85.7388 0.684873 82.6317 0.0972887 79.4262 -0.0268492C78.053 -0.0806423 76.6839 -0.0102986 75.3148 0.130391C73.4088 0.324874 71.5601 0.73453 69.7729 1.42143C67.0511 2.46832 64.7146 4.07384 62.8331 6.32901C60.7057 8.87798 59.4349 11.8407 58.652 15.0394C58.0986 17.3069 57.8281 19.6159 57.7338 21.9497C57.5862 25.4794 57.783 28.98 58.5618 32.4352C59.1808 35.1704 60.1564 37.7566 61.7181 40.0987C63.366 42.569 65.5057 44.4766 68.1455 45.8214C71.0395 47.2945 74.1384 47.8945 77.3439 48.0228C78.7335 48.0807 80.119 48.0228 81.5045 47.8656C82.9515 47.7 84.3697 47.4269 85.7593 46.9842C90.0962 45.6104 93.4165 42.958 95.6833 38.9773C96.9007 36.8421 97.6959 34.5456 98.2165 32.1456C98.8027 29.4269 99.024 26.6752 99.0076 23.8656C99.0199 21.4656 98.8437 19.049 98.401 16.6573C97.8845 13.8518 97.0073 11.1745 95.5562 8.70832L95.5603 8.71246ZM81.8242 29.0297C81.6889 30.0145 81.4881 30.9911 81.0536 31.889C80.8568 32.2945 80.615 32.6918 80.3239 33.0269C79.2828 34.2145 77.0324 34.2849 75.9461 32.46C75.4747 31.6697 75.2247 30.7966 75.0402 29.9028C74.7123 28.3014 74.6385 26.6752 74.6016 25.049C74.5524 23.0794 74.6016 21.1097 74.8475 19.1525C74.9828 18.0683 75.1837 16.9966 75.6469 15.9994C75.8149 15.6352 76.0363 15.2876 76.2822 14.969C77.3275 13.6076 79.6107 13.6904 80.5945 15.1469C81.1438 15.958 81.443 16.86 81.6397 17.8035C82.0578 19.8228 82.1357 21.8669 82.1275 24.0766C82.148 25.6325 82.0661 27.3373 81.8283 29.0338L81.8242 29.0297Z" fill="white"/><path d="M210.31 17.9112C210.166 17.9236 210.072 17.936 209.982 17.9319C209.892 17.9319 209.798 17.9112 209.666 17.8987C209.646 12.0022 208.363 6.3291 207.018 0.651855H189.146C189.216 0.850476 189.269 1.01599 189.331 1.18151C193.508 12.3043 197.681 23.427 201.862 34.5498C201.985 34.8767 202.038 35.1994 202.038 35.547C202.034 39.2794 202.038 43.0077 202.038 46.7401V47.336H218.598V46.6863C218.598 42.3829 218.598 38.0836 218.594 33.7843C218.594 33.4201 218.647 33.0808 218.779 32.7374C220.181 29.0298 221.574 25.3139 222.972 21.6022C225.534 14.787 228.1 7.97186 230.662 1.15668C230.723 0.999442 230.764 0.833922 230.822 0.655991H212.962C211.605 6.34151 210.347 12.0229 210.314 17.9112H210.31Z" fill="white"/><path d="M273.325 32.1663C273.079 30.7469 272.641 29.3897 271.973 28.1111C270.874 26.0173 269.353 24.2835 267.529 22.8145C266.295 21.8173 265.008 20.8821 263.77 19.889C263.229 19.4545 262.725 18.9704 262.254 18.4573C262.012 18.1925 261.832 17.8366 261.709 17.4931C261.43 16.6904 261.7 15.9456 262.422 15.5152C262.733 15.329 263.094 15.1966 263.447 15.1097C264.295 14.8945 265.152 14.9773 265.996 15.1304C267.935 15.4863 269.735 16.2311 271.436 17.2283C271.571 17.3069 271.706 17.3814 271.895 17.4849V2.11659C271.784 2.07521 271.694 2.03797 271.604 2.009C269.39 1.3428 267.14 0.875211 264.857 0.527624C263.033 0.250383 261.208 0.0559004 259.368 -0.0185824C257.56 -0.0930652 255.753 -0.0185826 253.957 0.246245C252.014 0.531762 250.137 1.049 248.403 2.00073C246.157 3.22969 244.55 5.03383 243.677 7.47107C243.131 8.98969 242.926 10.5621 242.918 12.1718C242.902 14.8242 243.533 17.2945 244.906 19.5662C246.013 21.3993 247.435 22.9511 249.104 24.2587C250.596 25.4297 252.162 26.4973 253.683 27.6269C254.498 28.2352 255.314 28.8518 256.085 29.5221C256.429 29.8242 256.72 30.2256 256.937 30.6352C257.429 31.5621 257.109 32.4518 256.171 32.9152C255.671 33.1635 255.134 33.2669 254.584 33.3042C253.514 33.3787 252.457 33.3042 251.403 33.118C248.809 32.6752 246.333 31.8725 243.984 30.6849C243.873 30.6311 243.754 30.5938 243.632 30.5442C243.525 31.3304 243.566 45.7097 243.681 46.0821C245.181 46.3883 246.694 46.7028 248.214 47.0049C250.608 47.4807 253.023 47.8076 255.457 47.9194C257.814 48.0269 260.171 47.9856 262.508 47.5676C264.328 47.2407 266.09 46.74 267.73 45.8587C270.378 44.4352 272.19 42.3 273.03 39.3745C273.711 36.9994 273.748 34.5911 273.329 32.1704L273.325 32.1663Z" fill="white"/><path d="M149.578 15.9995H158.891V41.1043C158.891 42.1471 158.891 43.1898 158.891 44.2326C158.891 45.267 158.883 46.3015 158.9 47.3319H175.464V15.9871C177.054 15.9871 178.6 15.9912 180.149 15.9871C181.707 15.9788 183.265 16.0119 184.818 15.9664V0.660156H149.529C149.431 1.42981 149.468 15.6146 149.574 16.0036L149.578 15.9995Z" fill="white"/><path d="M238.101 0.833981C237.359 0.602257 236.605 0.598121 235.863 0.842258C235.449 0.97881 235.142 1.25605 234.962 1.67398C234.732 2.20364 234.597 2.74984 234.588 3.32502C234.564 4.94295 234.834 6.53605 235.027 8.13329C235.261 10.0533 235.511 11.9733 235.757 13.8974C235.994 15.7678 236.228 17.6423 236.466 19.5126C236.482 19.6367 236.523 19.7526 236.552 19.8767H237.675C237.712 19.6657 237.745 19.5043 237.761 19.3429C237.995 17.2574 238.224 15.1719 238.454 13.0823C238.77 10.2188 239.089 7.3595 239.397 4.49191C239.491 3.59398 239.446 2.70433 239.13 1.84364C238.942 1.33881 238.606 0.982948 238.097 0.825706L238.101 0.833981Z" fill="white"/></g><defs><clipPath id="mwv"><rect width="274" height="48" fill="white" transform="translate(0.5)"/></clipPath></defs></svg>
-        <div class="logo-sub">Allergen Information</div>
-      </div>
-      <div class="meta-info">
-        <div class="meta-chip"><b>Review Date:</b> ${esc(D.reviewDate||"—")}</div>
-        <div class="meta-chip"><b>Approved by:</b> ${esc(D.reviewer||"—")}</div>
-        <div class="meta-chip"><b>Generated:</b> ${esc(D.generated||"—")}</div>
-        <div class="ro-badge">READ ONLY</div>
-      </div>
-    </div>
-  </div>
-  <div class="controls">
-    <div class="search-wrap">
-      <span class="search-icon">🔍</span>
-      <input id="searchInput" type="text" placeholder="Search dishes, allergens or ingredients…" value="${esc(state.search)}" />
-    </div>
-    <div class="view-tabs">
-      <div class="view-tab ${state.view==="matrix"?"active":""}" data-view="matrix">📋 Matrix</div>
-      <div class="view-tab ${state.view==="allergen"?"active":""}" data-view="allergen">⚠️ By Allergen</div>
-      <div class="view-tab ${state.view==="dish"?"active":""}" data-view="dish">🍱 By Dish</div>
-    </div>
-    ${state.view==="matrix"?`<div class="page-filters">${PAGES.map(p=>`<div class="page-pill ${p.id===state.page?"active":""}" data-page="${p.id}">${esc(p.title)}</div>`).join("")}</div>`:""}
+  <div class="top-bar"><div class="top-inner"><div class="logo-wrap"><svg width="220" height="39" viewBox="0 0 275 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#mwv)"><path d="M26.9245 17.1084C24.2478 11.5512 21.6162 6.09737 18.9968 0.664269H0.40332V47.336H16.9473V26.2532H17.5499C19.2838 30.4201 21.0013 34.5415 22.7106 38.6546H31.081C32.8026 34.5208 34.5201 30.3994 36.2458 26.2491H36.8525V47.3525H53.3842V0.651855H34.7948C32.1918 6.10151 29.5807 11.5636 26.9327 17.1125L26.9245 17.1084Z" fill="white"/><path d="M119.851 47.3316V26.9854C120.245 26.9399 120.245 26.9399 120.425 27.333C123.426 33.8585 126.426 40.3799 129.431 46.9054C129.497 47.0502 129.566 47.195 129.628 47.3233H144.86V0.655735H128.316V21.0061C128.058 21.1013 127.914 21.0599 127.836 20.8447C127.799 20.7371 127.742 20.6378 127.697 20.5344C125.209 15.1344 122.725 9.73022 120.237 4.33022C119.671 3.10539 119.109 1.8847 118.54 0.647461H103.336C103.238 1.33436 103.266 46.9882 103.357 47.3275H119.855L119.851 47.3316Z" fill="white"/><path d="M95.5603 8.71246C93.8797 5.85315 91.5842 3.64349 88.6328 2.1497C85.7388 0.684873 82.6317 0.0972887 79.4262 -0.0268492C78.053 -0.0806423 76.6839 -0.0102986 75.3148 0.130391C73.4088 0.324874 71.5601 0.73453 69.7729 1.42143C67.0511 2.46832 64.7146 4.07384 62.8331 6.32901C60.7057 8.87798 59.4349 11.8407 58.652 15.0394C58.0986 17.3069 57.8281 19.6159 57.7338 21.9497C57.5862 25.4794 57.783 28.98 58.5618 32.4352C59.1808 35.1704 60.1564 37.7566 61.7181 40.0987C63.366 42.569 65.5057 44.4766 68.1455 45.8214C71.0395 47.2945 74.1384 47.8945 77.3439 48.0228C78.7335 48.0807 80.119 48.0228 81.5045 47.8656C82.9515 47.7 84.3697 47.4269 85.7593 46.9842C90.0962 45.6104 93.4165 42.958 95.6833 38.9773C96.9007 36.8421 97.6959 34.5456 98.2165 32.1456C98.8027 29.4269 99.024 26.6752 99.0076 23.8656C99.0199 21.4656 98.8437 19.049 98.401 16.6573C97.8845 13.8518 97.0073 11.1745 95.5562 8.70832L95.5603 8.71246ZM81.8242 29.0297C81.6889 30.0145 81.4881 30.9911 81.0536 31.889C80.8568 32.2945 80.615 32.6918 80.3239 33.0269C79.2828 34.2145 77.0324 34.2849 75.9461 32.46C75.4747 31.6697 75.2247 30.7966 75.0402 29.9028C74.7123 28.3014 74.6385 26.6752 74.6016 25.049C74.5524 23.0794 74.6016 21.1097 74.8475 19.1525C74.9828 18.0683 75.1837 16.9966 75.6469 15.9994C75.8149 15.6352 76.0363 15.2876 76.2822 14.969C77.3275 13.6076 79.6107 13.6904 80.5945 15.1469C81.1438 15.958 81.443 16.86 81.6397 17.8035C82.0578 19.8228 82.1357 21.8669 82.1275 24.0766C82.148 25.6325 82.0661 27.3373 81.8283 29.0338L81.8242 29.0297Z" fill="white"/><path d="M210.31 17.9112C210.166 17.9236 210.072 17.936 209.982 17.9319C209.892 17.9319 209.798 17.9112 209.666 17.8987C209.646 12.0022 208.363 6.3291 207.018 0.651855H189.146C189.216 0.850476 189.269 1.01599 189.331 1.18151C193.508 12.3043 197.681 23.427 201.862 34.5498C201.985 34.8767 202.038 35.1994 202.038 35.547C202.034 39.2794 202.038 43.0077 202.038 46.7401V47.336H218.598V46.6863C218.598 42.3829 218.598 38.0836 218.594 33.7843C218.594 33.4201 218.647 33.0808 218.779 32.7374C220.181 29.0298 221.574 25.3139 222.972 21.6022C225.534 14.787 228.1 7.97186 230.662 1.15668C230.723 0.999442 230.764 0.833922 230.822 0.655991H212.962C211.605 6.34151 210.347 12.0229 210.314 17.9112H210.31Z" fill="white"/><path d="M273.325 32.1663C273.079 30.7469 272.641 29.3897 271.973 28.1111C270.874 26.0173 269.353 24.2835 267.529 22.8145C266.295 21.8173 265.008 20.8821 263.77 19.889C263.229 19.4545 262.725 18.9704 262.254 18.4573C262.012 18.1925 261.832 17.8366 261.709 17.4931C261.43 16.6904 261.7 15.9456 262.422 15.5152C262.733 15.329 263.094 15.1966 263.447 15.1097C264.295 14.8945 265.152 14.9773 265.996 15.1304C267.935 15.4863 269.735 16.2311 271.436 17.2283C271.571 17.3069 271.706 17.3814 271.895 17.4849V2.11659C271.784 2.07521 271.694 2.03797 271.604 2.009C269.39 1.3428 267.14 0.875211 264.857 0.527624C263.033 0.250383 261.208 0.0559004 259.368 -0.0185824C257.56 -0.0930652 255.753 -0.0185826 253.957 0.246245C252.014 0.531762 250.137 1.049 248.403 2.00073C246.157 3.22969 244.55 5.03383 243.677 7.47107C243.131 8.98969 242.926 10.5621 242.918 12.1718C242.902 14.8242 243.533 17.2945 244.906 19.5662C246.013 21.3993 247.435 22.9511 249.104 24.2587C250.596 25.4297 252.162 26.4973 253.683 27.6269C254.498 28.2352 255.314 28.8518 256.085 29.5221C256.429 29.8242 256.72 30.2256 256.937 30.6352C257.429 31.5621 257.109 32.4518 256.171 32.9152C255.671 33.1635 255.134 33.2669 254.584 33.3042C253.514 33.3787 252.457 33.3042 251.403 33.118C248.809 32.6752 246.333 31.8725 243.984 30.6849C243.873 30.6311 243.754 30.5938 243.632 30.5442C243.525 31.3304 243.566 45.7097 243.681 46.0821C245.181 46.3883 246.694 46.7028 248.214 47.0049C250.608 47.4807 253.023 47.8076 255.457 47.9194C257.814 48.0269 260.171 47.9856 262.508 47.5676C264.328 47.2407 266.09 46.74 267.73 45.8587C270.378 44.4352 272.19 42.3 273.03 39.3745C273.711 36.9994 273.748 34.5911 273.329 32.1704L273.325 32.1663Z" fill="white"/><path d="M149.578 15.9995H158.891V41.1043C158.891 42.1471 158.891 43.1898 158.891 44.2326C158.891 45.267 158.883 46.3015 158.9 47.3319H175.464V15.9871C177.054 15.9871 178.6 15.9912 180.149 15.9871C181.707 15.9788 183.265 16.0119 184.818 15.9664V0.660156H149.529C149.431 1.42981 149.468 15.6146 149.574 16.0036L149.578 15.9995Z" fill="white"/><path d="M238.101 0.833981C237.359 0.602257 236.605 0.598121 235.863 0.842258C235.449 0.97881 235.142 1.25605 234.962 1.67398C234.732 2.20364 234.597 2.74984 234.588 3.32502C234.564 4.94295 234.834 6.53605 235.027 8.13329C235.261 10.0533 235.511 11.9733 235.757 13.8974C235.994 15.7678 236.228 17.6423 236.466 19.5126C236.482 19.6367 236.523 19.7526 236.552 19.8767H237.675C237.712 19.6657 237.745 19.5043 237.761 19.3429C237.995 17.2574 238.224 15.1719 238.454 13.0823C238.77 10.2188 239.089 7.3595 239.397 4.49191C239.491 3.59398 239.446 2.70433 239.13 1.84364C238.942 1.33881 238.606 0.982948 238.097 0.825706L238.101 0.833981Z" fill="white"/></g><defs><clipPath id="mwv"><rect width="274" height="48" fill="white" transform="translate(0.5)"/></clipPath></defs></svg><div class="logo-sub">Allergen Information</div></div>
+  <div class="meta-info"><div class="meta-chip"><b>Review Date:</b> ${esc(D.reviewDate||"—")}</div><div class="meta-chip"><b>Approved by:</b> ${esc(D.reviewer||"—")}</div><div class="meta-chip"><b>Generated:</b> ${esc(D.generated||"—")}</div><div class="ro-badge">READ ONLY</div></div></div></div>
+  <div class="controls"><div class="search-wrap"><span class="search-icon">🔍</span><input id="searchInput" type="text" placeholder="Search dishes, allergens or ingredients…" value="${esc(state.search)}" /></div>
+  <div class="view-tabs"><div class="view-tab ${state.view==="matrix"?"active":""}" data-view="matrix">📋 Matrix</div><div class="view-tab ${state.view==="allergen"?"active":""}" data-view="allergen">⚠️ By Allergen</div><div class="view-tab ${state.view==="dish"?"active":""}" data-view="dish">🍱 By Dish</div></div>
+  ${state.view==="matrix"?`<div class="page-filters">${PAGES.map(p=>`<div class="page-pill ${p.id===state.page?"active":""}" data-page="${p.id}">${esc(p.title)}</div>`).join("")}</div>`:""}
   </div>
   <div class="main">${viewHTML}</div>
-  <div class="legend">
-    <span style="font-size:11px;color:#804040;font-weight:700;letter-spacing:1px;margin-right:4px;">LEGEND:</span>
-    <div class="legend-item"><div class="lsym c">✓</div> Contains allergen</div>
-    <div class="legend-item"><div class="lsym t">~</div> May contain / Traces</div>
-  </div>
-  <div class="footer">Food Standards Agency — 14 Declarable Allergens &nbsp;·&nbsp; <b>This document is for information purposes only</b></div>
-  `;
-
+  <div class="legend"><span style="font-size:11px;color:#804040;font-weight:700;letter-spacing:1px;margin-right:4px;">LEGEND:</span><div class="legend-item"><div class="lsym c">✓</div> Contains allergen</div><div class="legend-item"><div class="lsym t">~</div> May contain / Traces</div></div>
+  <div class="footer">Food Standards Agency — 14 Declarable Allergens &nbsp;·&nbsp; <b>This document is for information purposes only</b></div>`;
   document.getElementById("searchInput")?.addEventListener("input",e=>{state.search=e.target.value;render();});
   document.querySelectorAll(".view-tab").forEach(el=>el.addEventListener("click",()=>{state.view=el.dataset.view;state.search="";render();}));
   document.querySelectorAll(".page-pill").forEach(el=>el.addEventListener("click",()=>{state.page=parseInt(el.dataset.page);render();}));
 }
-
 function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-
 function buildMatrix(pg,q){
   const cols=ALIST;
   const items=pg.items.filter(it=>!q||it.name.toLowerCase().includes(q));
@@ -300,87 +130,36 @@ function buildMatrix(pg,q){
       const cell=it.data[a.id];
       if(!cell?.on&&!cell?.trace)return`<td><div class="mcell"><span class="empty-cell">·</span></div></td>`;
       if(cell.trace&&!cell.on)return`<td style="background:rgba(251,191,36,.04)"><div class="mcell"><span class="msym t">~</span>${cell.note?`<span class="mnote">${esc(cell.note)}</span>`:""}</div></td>`;
-      const sym=cell.trace?"~":"✓";
-      const cls=cell.trace?"t":"c";
+      const sym=cell.trace?"~":"✓";const cls=cell.trace?"t":"c";
       return`<td style="background:${cell.trace?"rgba(251,191,36,.04)":"rgba(231,59,40,.04)"}"><div class="mcell"><span class="msym ${cls}">${sym}</span>${cell.note?`<span class="mnote">${esc(cell.note)}</span>`:""}</div></td>`;
     }).join("");
     return`<tr><td class="name-cell">${esc(it.name)}</td>${cells}</tr>`;
   }).join("");
   return`<div class="matrix-wrap"><table class="matrix-table"><thead><tr><th class="name-hd">Dish / Item</th>${headCols}</tr></thead><tbody>${rows}</tbody></table></div>`;
 }
-
 function buildAllergenView(q){
   const results=[];
-  PAGES.forEach(pg=>{
-    pg.items.forEach(it=>{
-      ALIST.forEach(a=>{
-        const cell=it.data[a.id];
-        if(cell?.on||cell?.trace){
-          if(!q||a.name.toLowerCase().includes(q)||it.name.toLowerCase().includes(q)||pg.title.toLowerCase().includes(q)){
-            results.push({a,it,pg,cell});
-          }
-        }
-      });
-    });
-  });
-  const byAllergen={};
-  results.forEach(r=>{
-    if(!byAllergen[r.a.id])byAllergen[r.a.id]={a:r.a,dishes:[]};
-    byAllergen[r.a.id].dishes.push(r);
-  });
+  PAGES.forEach(pg=>{pg.items.forEach(it=>{ALIST.forEach(a=>{const cell=it.data[a.id];if(cell?.on||cell?.trace){if(!q||a.name.toLowerCase().includes(q)||it.name.toLowerCase().includes(q)||pg.title.toLowerCase().includes(q)){results.push({a,it,pg,cell});}}});});});
+  const byAllergen={};results.forEach(r=>{if(!byAllergen[r.a.id])byAllergen[r.a.id]={a:r.a,dishes:[]};byAllergen[r.a.id].dishes.push(r);});
   const cards=ALIST.filter(a=>byAllergen[a.id]).map(a=>{
     const entry=byAllergen[a.id];
-    const drows=entry.dishes.map(r=>`
-      <div class="dish-row">
-        <div><div class="dish-name">${esc(r.it.name)}</div><div class="dish-page">${esc(r.pg.title)}</div></div>
-        <div style="display:flex;align-items:center;gap:6px;">
-          ${r.cell.note?`<span class="a-note">${esc(r.cell.note)}</span>`:""}
-          <span class="status-badge ${(r.cell.trace&&!r.cell.on)?"t":"c"}">${(r.cell.trace&&!r.cell.on)?"MAY CONTAIN":"CONTAINS"}</span>
-        </div>
-      </div>`).join("");
-    return`<div class="a-card">
-      <div class="a-card-head" style="border-top:2px solid ${a.color}">
-        <span class="a-card-emoji">${a.emoji}</span>
-        <span class="a-card-name">${esc(a.name)}</span>
-        <span class="a-card-count">${entry.dishes.length} dish${entry.dishes.length!==1?"es":""}</span>
-      </div>
-      <div class="a-card-body">${drows||'<div class="no-dishes">None found</div>'}</div>
-    </div>`;
+    const drows=entry.dishes.map(r=>`<div class="dish-row"><div><div class="dish-name">${esc(r.it.name)}</div><div class="dish-page">${esc(r.pg.title)}</div></div><div style="display:flex;align-items:center;gap:6px;">${r.cell.note?`<span class="a-note">${esc(r.cell.note)}</span>`:""}<span class="status-badge ${(r.cell.trace&&!r.cell.on)?"t":"c"}">${(r.cell.trace&&!r.cell.on)?"MAY CONTAIN":"CONTAINS"}</span></div></div>`).join("");
+    return`<div class="a-card"><div class="a-card-head" style="border-top:2px solid ${a.color}"><span class="a-card-emoji">${a.emoji}</span><span class="a-card-name">${esc(a.name)}</span><span class="a-card-count">${entry.dishes.length} dish${entry.dishes.length!==1?"es":""}</span></div><div class="a-card-body">${drows||'<div class="no-dishes">None found</div>'}</div></div>`;
   }).join("");
   if(!cards)return`<div class="no-results"><span class="nr-icon">🔍</span>No allergen data matches your search.</div>`;
   return`<div class="allergen-grid">${cards}</div>`;
 }
-
 function buildDishView(q){
-  const allItems=[];
-  PAGES.forEach(pg=>pg.items.forEach(it=>allItems.push({it,pg})));
+  const allItems=[];PAGES.forEach(pg=>pg.items.forEach(it=>allItems.push({it,pg})));
   const filtered=allItems.filter(({it,pg})=>!q||it.name.toLowerCase().includes(q)||pg.title.toLowerCase().includes(q));
   if(!filtered.length)return`<div class="no-results"><span class="nr-icon">🔍</span>No dishes match your search.</div>`;
   const cards=filtered.map(({it,pg})=>{
     const hasAllergens=ALIST.some(a=>it.data[a.id]?.on||it.data[a.id]?.trace);
-    const rows=ALIST.filter(a=>it.data[a.id]?.on||it.data[a.id]?.trace).map(a=>{
-      const cell=it.data[a.id];
-      const isTrace=cell.trace&&!cell.on;
-      return`<div class="allergen-row">
-        <span class="a-emoji">${a.emoji}</span>
-        <span class="a-name">${esc(a.name)}</span>
-        ${cell.note?`<span class="a-note">${esc(cell.note)}</span>`:""}
-        <span class="status-badge ${isTrace?"t":"c"}">${isTrace?"MAY CONTAIN":"CONTAINS"}</span>
-      </div>`;
-    }).join("");
-    return`<div class="d-card">
-      <div class="d-card-head">
-        <div class="d-card-title">${esc(it.name)}</div>
-        <div class="d-card-page">${esc(pg.title)}</div>
-      </div>
-      <div class="d-card-body">
-        ${hasAllergens?rows:`<div class="no-allergens"><span class="safe-badge">✓ No declared allergens</span></div>`}
-      </div>
-    </div>`;
+    const rows=ALIST.filter(a=>it.data[a.id]?.on||it.data[a.id]?.trace).map(a=>{const cell=it.data[a.id];const isTrace=cell.trace&&!cell.on;return`<div class="allergen-row"><span class="a-emoji">${a.emoji}</span><span class="a-name">${esc(a.name)}</span>${cell.note?`<span class="a-note">${esc(cell.note)}</span>`:""}<span class="status-badge ${isTrace?"t":"c"}">${isTrace?"MAY CONTAIN":"CONTAINS"}</span></div>`;}).join("");
+    return`<div class="d-card"><div class="d-card-head"><div class="d-card-title">${esc(it.name)}</div><div class="d-card-page">${esc(pg.title)}</div></div><div class="d-card-body">${hasAllergens?rows:`<div class="no-allergens"><span class="safe-badge">✓ No declared allergens</span></div>`}</div></div>`;
   }).join("");
   return`<div class="dish-grid">${cards}</div>`;
 }
-
 render();
 })();
 </script>
